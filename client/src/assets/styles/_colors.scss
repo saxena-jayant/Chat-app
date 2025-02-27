@@ -1,0 +1,96 @@
+$green: #07e9a1;
+$green2: #17ad7d;
+$lightGreen: #e3f4ec;
+$yellow: #ffd66d;
+$blue: #171717;
+$lightBlue: #a9cdf9;
+$red: #f76152;
+$white: #fff;
+
+$colors: (
+  "green": #07e9a1,
+  "green-2": #17ad7d,
+  "green-3": #02c878,
+  "green-4": #019d6b,
+  "green-5": #05ad78,
+  "light-green": #e3f4ec,
+  "light-green-2": #99e7c9,
+  "light-green-3": #aee87d80,
+  "light-green-4": #aee87d,
+  "light-green-5": #b4f08180,
+  "light-green-6": #019d6b1a,
+  "light-green-7": #e8f7f2,
+  "light-green-8": #dbebe8,
+  "light-green-9": #e6f5f0,
+  "yellow": #ffd66d,
+  "yellow-2": #fcd660,
+  "light-yellow": #ffefcb,
+  "purple": #decfff,
+  "purple-2": #cec2ee,
+  "blue": #171717,
+  "blue-2": #01234e,
+  "light-blue": #a9cdf9,
+  "light-blue-2": #cae7f5,
+  "off-white": #f5f5f5,
+  "lightYellow": #f5f2ed,
+  "lightPurple": #f3f3f4,
+  "redgradient":
+    linear-gradient(
+      180deg,
+      #ff7e83 0%,
+      #ff9687 46.15%,
+      rgba(255, 126, 131, 0) 100%
+    ),
+  "greengradient":
+    linear-gradient(
+      179.69deg,
+      #07e9a1 0.25%,
+      #00cdac 39.94%,
+      rgba(41, 211, 149, 0) 99.73%
+    ),
+  "greengradient1":
+    linear-gradient(
+      179.69deg,
+      #07e9a1 0.25%,
+      #07e9a1 25.43%,
+      #00cdac 58.59%,
+      rgba(41, 211, 149, 0) 99.73%
+    ),
+  "yellowgradient":
+    linear-gradient(
+      180deg,
+      #ffed8b 0%,
+      #ffde87 46.15%,
+      rgba(255, 237, 139, 0) 100%
+    ),
+  "yellowgradient2":
+    linear-gradient(180deg, #ffed8b 0%, #ffde87 46.15%, #ffed8b 100%),
+  //"red": #f76152,
+  "pink": #fab2b4,
+  "gray": #f3f4f6,
+  "gray2": #f3f3f4,
+  "gray3": #ebebeb,
+  "gray4": #e0e0e0,
+  "gray5": #cfcfcf,
+  "gray6": #ececec,
+  "black": #171717,
+  "black2": #333333,
+  "white": #ffffff,
+  "white2": #fbfbfd,
+  "grey": #c4c4c4,
+  "purple-3": #e0dbf2,
+  "red": #f76152,
+);
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background: $color;
+  }
+}
+// bg-green, bg-light-green
+
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border: solid 1px $color;
+  }
+}

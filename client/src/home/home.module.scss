@@ -1,0 +1,14 @@
+.editable:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block;
+  color: #999;
+}
+
+.editable::-webkit-scrollbar {
+  display: none;
+}
+
+.documents::-webkit-scrollbar {
+  display: none;
+}
