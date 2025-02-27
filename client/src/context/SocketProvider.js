@@ -13,7 +13,7 @@ const SocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
   const [userOnline, setUserOnline] = useState(true);
   const heartbeatTimeoutRef = useRef();
-  const socketURL = "http://localhost:5001"; // Change this to your backend URL
+  const socketURL = "https://chat-app-server-delta-lemon.vercel.app"; // Change this to your backend URL
 
   const handleConnect = (newSocket) => {
     console.log("Connected to server:", newSocket.id);
