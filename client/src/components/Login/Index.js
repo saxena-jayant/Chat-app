@@ -52,7 +52,10 @@ const Index = () => {
         style={{ minHeight: "70vh", gap: "100px" }}
       >
         <h2>Welcome to Varta</h2>
-        <div style={{ width: "300px" }}>
+        <div
+          className="d-flex flex-column align-items-center"
+          style={{ width: "300px" }}
+        >
           <p className="text-center font-20 font-medium mb-40">
             Log in to continue
           </p>
