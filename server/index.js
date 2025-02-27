@@ -25,6 +25,9 @@ socketManager(server);
 
 app.use("/user", require("./routes/userRoutes"));
 app.use("/home", require("./routes/chatRoutes"));
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "login" });
+});
 
 server.listen(port, () => {
   console.log(`Server is running on ${port}`);
